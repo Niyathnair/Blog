@@ -1,7 +1,7 @@
 "use client";
 
 /* Generated from posts/escaping-flatland.md in the nsquaredzz.github.io repository
-   by research/escaping-flatland/export_comic.py. Edit the markdown, then re-run the script. */
+   by scripts/export_comic.py. Edit the markdown, then re-run the script. */
 
 import Image from "next/image";
 import { Panel } from "@/components/ui/Panel";
@@ -275,7 +275,7 @@ export default function EscapingFlatland() {
         <PullQuote attribution={"What survived testing"}>{"Curved space bought capacity. It did not buy depth."}</PullQuote>
         <SectionStamp number="14" label={"Code"} accent="cyan" />
         <h2 id="code">{"Code"}</h2>
-        <p>{"Everything above can be rerun: the geometry with 18 tests, the three experiments, the result files and the figure scripts are in "}<a href={"https://github.com/nsquaredzz/nsquaredzz.github.io/tree/main/research/escaping-flatland"} target="_blank" rel="noopener noreferrer">{"research/escaping-flatland"}</a>{"."}</p>
+        <p>{"Everything above can be rerun. The geometry with its 18 tests, the three experiments, the result files and the figure scripts are in "}<a href={"https://github.com/nsquaredzz/escaping-flatland"} target="_blank" rel="noopener noreferrer">{"github.com/nsquaredzz/escaping-flatland"}</a>{"."}</p>
         <h3 id="references" className="font-display text-3xl tracking-widest mt-14 mb-3">{"REFERENCES"}</h3>
         <ol className="font-serif">
           <li>{"Nickel, M., and Kiela, D. (2017). Poincare Embeddings for Learning Hierarchical Representations. NeurIPS."}</li>
