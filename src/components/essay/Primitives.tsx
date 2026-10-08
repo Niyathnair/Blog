@@ -232,11 +232,17 @@ export function Figure({
   caption,
   children,
   accent = "yellow",
+  label = "FIG",
+  plain = false,
 }: {
   no: number;
   caption: ReactNode;
   children: ReactNode;
   accent?: "yellow" | "cyan" | "red" | "green";
+  /** Tag shown before the number: FIG, EQ, TABLE. */
+  label?: string;
+  /** White body with a thin accent bar, for plots and tables that need a clean background. */
+  plain?: boolean;
 }) {
   const bg = {
     yellow: "halftone-yellow",
@@ -246,12 +252,19 @@ export function Figure({
   }[accent];
   return (
     <figure className="my-10 panel p-0 overflow-hidden">
-      <div className={`${bg} p-5 sm:p-6 border-b-[5px] border-black`}>
+      {plain ? <div className={`${bg} h-3 border-b-[3px] border-black`} /> : null}
+      <div
+        className={
+          plain
+            ? "bg-white p-2 sm:p-3 border-b-[5px] border-black"
+            : `${bg} p-5 sm:p-6 border-b-[5px] border-black`
+        }
+      >
         {children}
       </div>
       <figcaption className="px-5 py-3 font-mono text-[12px] uppercase tracking-[0.18em] flex gap-3 items-start">
-        <span className="font-display text-[#ff2d55] tracking-widest text-base leading-none mt-[2px]">
-          FIG {no}.
+        <span className="font-display text-[#ff2d55] tracking-widest text-base leading-none mt-[2px] whitespace-nowrap">
+          {label} {no}.
         </span>
         <span className="opacity-80 normal-case font-serif text-[14px] tracking-normal leading-snug">
           {caption}

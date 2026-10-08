@@ -9,7 +9,7 @@ const ScrollFX = dynamic(() => import("@/components/ui/ScrollFX"));
 export const metadata: Metadata = {
   title: "Escaping Flatland · Multiverse of Intelligence #002",
   description:
-    "The mathematics of a hyperbolic context manifold: complex lifts, Poincare geometry, Mobius message passing, and manifold contrastive optimization.",
+    "A hyperbolic context manifold, rebuilt and tested: curved space holds a hierarchy in 8 dimensions that flat space needs 32 for, and it does not stop over-smoothing.",
 };
 
 export default function Page() {

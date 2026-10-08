@@ -33,7 +33,7 @@ export const SERIES: Series[] = [
     title: "Escaping Flatland",
     subtitle: "Hyperbolic Context Manifold",
     blurb:
-      "A new manifold approach for preserving hierarchy, relation, and semantic distance without collapse.",
+      "Memory on a hyperbolic manifold, built and tested. Curved space bought capacity for hierarchy. It did not buy depth.",
     accent: "green",
     shape: "web",
     issue: "#002",
